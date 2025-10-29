@@ -1,0 +1,48 @@
+:root {
+  /* Red */
+  --numeros-red: #471515;
+  --btn-red: #ff4c4c;
+  --btn-secundary-red: #ffd9d9;
+  --backgrond-red: #fff2f2;
+  --shadow-red: 71, 21, 21;
+
+  /* Green */
+  --numeros-green: #14401d;
+  --btn-green: #8ce8a1;
+  --btn-secundary-green: #dafae0;
+  --backgrond-green: #f2fff5;
+  --shadow-green: 20, 64, 29;
+
+  /* Blue */
+  --numeros-blue: #153047;
+  --btn-blue: #8bcaff;
+  --btn-secundary-blue: #d9eeff;
+  --backgrond-blue: #f2f9ff;
+  --shadow-blue: 21, 48, 71;
+
+  /* Dark Red */
+  --numeros-red-dark: #fff2f2;
+  --btn-red-dark: #ff4c4c;
+  --btn-secundary-red-dark: #471515;
+  --backgrond-red-dark: #0d0404;
+  --shadow-red-dark: 71, 21, 21;
+
+  /* Dark Green */
+  --numeros-green-dark: #f2fff5;
+  --btn-green-dark: #4dda6e;
+  --btn-secundary-green-dark: #0f2c15;
+  --backgrond-green-dark: #040d06;
+  --shadow-green-dark: 20, 64, 29;
+
+  /* Dark Blue */
+  --numeros-blue-dark: #f2f9ff;
+  --btn-blue-dark: #4cacff;
+  --btn-secundary-blue-dark: #0e2231;
+  --backgrond-blue-dark: #04090d;
+  --shadow-blue-dark: 21, 48, 71;
+}
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+}

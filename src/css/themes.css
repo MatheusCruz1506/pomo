@@ -1,0 +1,99 @@
+/* themes.css */
+[data-modo] {
+  background-color: var(--backgrond);
+  color: var(--numeros);
+}
+
+[data-modo] * {
+  color: var(--numeros);
+}
+
+[data-modo] .modo {
+  padding: 8px 16px;
+  border: 3px solid var(--numeros);
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  background-color: var(--btn-secundary);
+  border-radius: 26px;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(var(--shadow), 0.15);
+}
+
+.ativo {
+  font-weight: bold;
+}
+
+/* NOVO: Ajuste de fonte do .modo para telas menores */
+@media (max-width: 500px) {
+  [data-modo] .modo {
+    font-size: 20px; /* Diminui a fonte */
+    padding: 6px 12px; /* Diminui o padding */
+  }
+}
+
+[data-modo] .timer {
+  font-size: 256px;
+  font-weight: 400;
+  line-height: 0.85;
+  transform: scaleY(0.85);
+  text-shadow: 0 4px 8px rgba(var(--shadow), 0.25);
+}
+
+/* Ajuste de fonte do timer para telas menores (Responsivo) */
+@media (max-width: 500px) {
+  [data-modo] .timer {
+    font-size: 160px; /* Tamanho reduzido para caber em telas de celular */
+    line-height: 1; /* Ajuste o line-height para melhor visualização */
+  }
+}
+
+/* Variáveis dinâmicas */
+[data-modo="foco"] {
+  --numeros: var(--numeros-red);
+  --btn: var(--btn-red);
+  --btn-secundary: var(--btn-secundary-red);
+  --backgrond: var(--backgrond-red);
+  --shadow: var(--shadow-red);
+}
+
+[data-modo="curto"] {
+  --numeros: var(--numeros-green);
+  --btn: var(--btn-green);
+  --btn-secundary: var(--btn-secundary-green);
+  --backgrond: var(--backgrond-green);
+  --shadow: var(--shadow-green);
+}
+
+[data-modo="longo"] {
+  --numeros: var(--numeros-blue);
+  --btn: var(--btn-blue);
+  --btn-secundary: var(--btn-secundary-blue);
+  --backgrond: var(--backgrond-blue);
+  --shadow: var(--shadow-blue);
+}
+
+[data-modo="foco-dark"] {
+  --numeros: var(--numeros-red-dark);
+  --btn: var(--btn-red-dark);
+  --btn-secundary: var(--btn-secundary-red-dark);
+  --backgrond: var(--backgrond-red-dark);
+  --shadow: var(--shadow-red-dark);
+}
+
+[data-modo="curto-dark"] {
+  --numeros: var(--numeros-green-dark);
+  --btn: var(--btn-green-dark);
+  --btn-secundary: var(--btn-secundary-green-dark);
+  --backgrond: var(--backgrond-green-dark);
+  --shadow: var(--shadow-green-dark);
+}
+
+[data-modo="longo-dark"] {
+  --numeros: var(--numeros-blue-dark);
+  --btn: var(--btn-blue-dark);
+  --btn-secundary: var(--btn-secundary-blue-dark);
+  --backgrond: var(--backgrond-blue-dark);
+  --shadow: var(--shadow-blue-dark);
+}

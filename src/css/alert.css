@@ -1,0 +1,69 @@
+/* Overlay com blur */
+
+.overlay {
+  display: none; /* visível quando tem a classe 'active' */
+}
+
+.overlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px; /* Adicionado padding para telas muito pequenas */
+}
+
+/* Alert box */
+.alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.6em;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste do alert box em telas menores */
+@media (max-width: 480px) {
+  .alert {
+    width: 100%;
+    max-width: 320px; /* Limite um pouco mais apertado */
+    padding: 24px;
+  }
+}
+
+/* Mensagem */
+.alert p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  color: var(--btn);
+  line-height: 1.5;
+}
+
+/* Botão */
+.alert button {
+  width: 80%;
+  padding: 12px 24px;
+  background: var(--btn);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.alert button:hover {
+  filter: brightness(0.8);
+}
